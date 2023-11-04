@@ -5,6 +5,7 @@ import ControlledFormHooks from './components/ControlledFormHooks';
 import HooksCounter from './components/HooksCounter';
 import StatefulGreetingWithPrevStateHooks from './components/StatefulGreetingWithPrevStateHooks';
 import UseEffectCounter from './components/UseEffectCounter';
+import UseEffectCounterContainer from './components/UseEffectCounterContainer';
 import UseStateWithArrays from './components/UseStateWithArrays';
 import UseStateWithObjects from './components/UseStateWithObjects';
 
@@ -18,7 +19,8 @@ function App() {
       {/* <UseStateWithArrays /> */}
       {/* <UseStateWithObjects /> */}
       {/* <StatefulGreetingWithPrevStateHooks /> */}
-      <UseEffectCounter />
+      {/* <UseEffectCounter /> */}
+      <UseEffectCounterContainer />
     </div>
   );
 }

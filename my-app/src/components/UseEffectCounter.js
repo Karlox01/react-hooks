@@ -9,8 +9,14 @@ function UseEffectCounter() {
     useEffect(() => {
         console.log('Creating timer');
         const interval = setInterval(() => {
+            console.log('interval executed')
             setTime(time => time + 1)
         }, 1000);
+        return () => {
+            console.log('clearning up')
+            clearInterval(interval)
+        }
+        // we run clearinterval function so that the function when unmounted stops running
     }, []);
     // you have to specify the count after the function otherwise it will re render any time something else is rendered or [] an empty array this means it will only render once from the start, specifying count means it will render every time count is updated
     return (
