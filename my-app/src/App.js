@@ -3,7 +3,10 @@ import ClassCounter from './components/ClassCounter';
 import ControlledForm from './components/ControlledForm';
 import ControlledFormHooks from './components/ControlledFormHooks';
 import HooksCounter from './components/HooksCounter';
+import StatefulGreetingWithPrevStateHooks from './components/StatefulGreetingWithPrevStateHooks';
+import UseEffectCounter from './components/UseEffectCounter';
 import UseStateWithArrays from './components/UseStateWithArrays';
+import UseStateWithObjects from './components/UseStateWithObjects';
 
 function App() {
   return (
@@ -12,7 +15,10 @@ function App() {
       <HooksCounter /> */}
       {/* <ControlledForm /> */}
       {/* <ControlledFormHooks /> */}
-      <UseStateWithArrays />
+      {/* <UseStateWithArrays /> */}
+      {/* <UseStateWithObjects /> */}
+      {/* <StatefulGreetingWithPrevStateHooks /> */}
+      <UseEffectCounter />
     </div>
   );
 }
